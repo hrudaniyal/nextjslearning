@@ -1,5 +1,5 @@
 import { userData } from "../route";
-export async function GET(request: Request, { params }: { params: { id: string } }){
+export async function GET(request: Request, { params }: { params: { id: any } }){
   const { id } = params;
   const user = userData.filter((item) => item.id == id);
   if (!user) {
