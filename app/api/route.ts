@@ -28,10 +28,7 @@ export const userData = [
 
  
 export async function GET() {
-  const res = {
-    stutus: true,
-    users: userData,
-  };
+ 
   return Response.json(userData);
 }
 export async function POST(request: Request) {
